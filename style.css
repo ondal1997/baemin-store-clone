@@ -4,7 +4,6 @@ html, body {
 
 body {
     margin: 0;
-    min-width: 1024px;
     font-family: Roboto, system-ui, Apple SD Gothic Neo, AppleGothic, sans-serif;
 }
 
@@ -73,14 +72,10 @@ a {
 .header_middle form button {
     border: none;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 1.25rem;
     background-color: rgba(0,0,0,0);
     margin: 0;
     padding: 0;
-}
-
-.header_middle form button::after {
-    content: "🔍";
 }
 
 .header_logo {
@@ -138,8 +133,30 @@ a {
     box-sizing: border-box;
 }
 
-.product_list img {
+.img_wrapper::before {
+    content: '';
+
     width: 100%;
+    padding-top: 150%;
+    display: block;
+
+    background-color: #29C1BC;
+}
+
+.img_wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.product_list img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    bottom: 0;
+    right: 0;
+    transform: translateX(-50%);
+
+    height: 100%;
 }
 
 /* footer : start */
