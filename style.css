@@ -3,8 +3,9 @@ html, body {
 }
 
 body {
-    margin: auto;
-    width: 1024px;
+    margin: 0;
+    min-width: 1024px;
+    font-family: Roboto, system-ui, Apple SD Gothic Neo, AppleGothic, sans-serif;
 }
 
 strong {
@@ -52,6 +53,8 @@ a {
 
 .header_middle form {
     position: absolute;
+    display: flex;
+    align-items: center;
     right: 1rem;
 }
 
@@ -72,9 +75,8 @@ a {
     cursor: pointer;
     font-size: 1rem;
     background-color: rgba(0,0,0,0);
-    color: #333333;
     margin: 0;
-    padding: 0.25rem 0;
+    padding: 0;
 }
 
 .header_middle form button::after {
@@ -82,11 +84,11 @@ a {
 }
 
 .header_logo {
-    width: 10rem;
+    height: 2.5rem;
 }
 
 .header_logo img {
-    width: 100%;
+    height: 100%;
 }
 
 .header_bottom {
@@ -105,10 +107,40 @@ a {
 
 .header_bottom > li:not(:last-child)::after {
     content: '';
-    margin: 1rem;
+    display: inline-block;
+    width: 2rem;
 }
 
 /* header : end */
+
+.slide {
+    width: 100%;
+    height: 32rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.product_list {
+    list-style: none;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: 0;
+    margin: 0;
+}
+
+.product_list > li {
+    width: 25%;
+    margin: 0;
+    padding: 0 0.5rem;
+    box-sizing: border-box;
+}
+
+.product_list img {
+    width: 100%;
+}
 
 /* footer : start */
 
@@ -149,7 +181,8 @@ footer {
 
 .footer_top > li:not(:last-child)::after {
     content: '';
-    margin: 2rem;
+    display: inline-block;
+    width: 4rem;
 }
 
 .footer_middle {
