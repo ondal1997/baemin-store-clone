@@ -11,30 +11,35 @@
 
 <body>
     <header>
-        <ul>
-            <li><a>로그인</a></li>
-            <li><a>회원가입</a></li>
-            <li><a>마이페이지</a></li>
-            <li><a>장바구니 0</a></li>
+        <ul class="header_top">
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">회원가입</a></li>
+            <li><a href="#">마이페이지</a></li>
+            <li><a href="#">장바구니 <strong>0</strong></a></li>
         </ul>
 
-        <a><img alt="로고 가로형" src="로고 가로형.png"></a>
-        <form>
-            <input type="text" placeholder="검색어를 입력해주세요">
-            <button type="submit">\e97a</button>
-        </form>
+        <div class="header_middle">
+            <div class="header_logo">
+                <a href="#"><img alt="로고 가로형" src="로고 가로형.png"></a>
+            </div>
 
-        <ul>
-            <li><a>전체</a></li>
-            <li><a>문구</a></li>
-            <li><a>리빙</a></li>
-            <li><a>책</a></li>
-            <li><a>배민그린</a></li>
-            <li><a>ㅋㅋ에디션</a></li>
-            <li><a>을지로에디션</a></li>
-            <li><a>배달이친구들</a></li>
-            <li><a>선물세트</a></li>
-            <li><a>콜라보레이션</a></li>
+            <form>
+                <input type="text" placeholder="검색어를 입력해주세요">
+                <button type="submit"></button>
+            </form>
+        </div>
+
+        <ul class="header_bottom">
+            <li><a href="#">전체</a></li>
+            <li><a href="#">문구</a></li>
+            <li><a href="#">리빙</a></li>
+            <li><a href="#">책</a></li>
+            <li><a href="#">배민그린</a></li>
+            <li><a href="#">ㅋㅋ에디션</a></li>
+            <li><a href="#">을지로에디션</a></li>
+            <li><a href="#">배달이친구들</a></li>
+            <li><a href="#">선물세트</a></li>
+            <li><a href="#">콜라보레이션</a></li>
         </ul>
     </header>
 
@@ -59,52 +64,88 @@
     </section>
 
     <footer>
-        <img alt="로고 세로형" src="로고 세로형.png">
+        <div class="footer_logo">
+            <img alt="로고 세로형" src="로고 세로형.png">
+        </div>
 
-        <ul>
-            <li><a>공지사항</a></li>
-            <li><a>1:1문의</a></li>
-            <li><a>이용약관</a></li>
-            <li><a>개인정보처리방침</a></li>
-            <li><a>판매처 안내</a></li>
-        </ul>
+        <div>
+            <ul class="footer_top">
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">1:1문의</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">판매처 안내</a></li>
+            </ul>
 
-        <dl>
-            <dt>상호</dt>
-            <dd>(주)우아한형제들</dd>
+            <dl class="footer_middle">
+                <div>
+                    <dt>상호</dt>
+                    <dd>(주)우아한형제들</dd>
+                </div>
 
-            <dt>대표</dt>
-            <dd>김범준</dd>
+                <div>
+                    <dt>대표</dt>
+                    <dd>김범준</dd>
+                </div>
 
-            <dt>사업자등록번호</dt>
-            <dd>120-87-65763</dd>
+                <div>
+                    <dt>사업자등록번호</dt>
+                    <dd>120-87-65763</dd>
+                </div>
 
-            <dt>통신판매업신고번호</dt>
-            <dd>2012-서울송파-0515</dd>
+                <div>
+                    <dt>통신판매업신고번호</dt>
+                    <dd>2012-서울송파-0515</dd>
+                </div>
 
-            <dt>대표번호</dt>
-            <dd>1670-9902</dd>
+                <div>
+                    <a href="#">[사업자정보확인]</a>
+                </div>
+            </dl>
 
-            <dt>배민문방구 고객센터(1670-9902) 운영시간</dt>
-            <dd>월-금 13:00~18:00(주말•공휴일 휴무)</dd>
+            <dl class="footer_middle">
+                <div>
+                    <dt>대표번호</dt>
+                    <dd>1670-9902</dd>
+                </div>
 
-            <dt>팩스번호</dt>
-            <dd>050-605-0041</dd>
+                <div>
+                    <dt>배민문방구 고객센터(1670-9902) 운영시간</dt>
+                    <dd>월-금 13:00~18:00(주말•공휴일 휴무)</dd>
+                </div>
+            </dl>
 
-            <dt>메일</dt>
-            <dd>baemin_store@woowahan.com</dd>
+            <dl class="footer_middle">
+                <div>
+                    <dt>팩스번호</dt>
+                    <dd>050-605-0041</dd>
+                </div>
 
-            <dt>배민문방구 인스타그램</dt>
-            <dd>@baemin_store</dd>
+                <div>
+                    <dt>메일</dt>
+                    <dd>baemin_store@woowahan.com</dd>
+                </div>
 
-            <dt>주소</dt>
-            <dd>서울특별시 송파구 위례성대로 2 장은빌딩</dd>
+                <div>
+                    <dt>배민문방구 인스타그램</dt>
+                    <dd>@baemin_store</dd>
+                </div>
+            </dl>
 
-            <dt>호스팅제공</dt>
-            <dd>엔에이치엔고도(주)</dd>
-        </dl>
+            <dl class="footer_middle">
+                <div>
+                    <dt>주소</dt>
+                    <dd>서울특별시 송파구 위례성대로 2 장은빌딩</dd>
+                </div>
 
-        <p>© Woowa Brothers Corp. All right Reserved</p>
+                <div>
+                    <dt>호스팅제공</dt>
+                    <dd>엔에이치엔고도(주)</dd>
+                </div>
+            </dl>
+
+            <p class="footer_bottom">© Woowa Brothers Corp. All right Reserved</p>
+        </div>
     </footer>
 </body>
 
