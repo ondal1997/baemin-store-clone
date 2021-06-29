@@ -1,7 +1,3 @@
-html, body {
-    height: 100%;
-}
-
 body {
     margin: 0;
     font-family: Roboto, system-ui, Apple SD Gothic Neo, AppleGothic, sans-serif;
@@ -59,11 +55,11 @@ a {
 
 .header_middle form input {
     border: none;
+    border-bottom: 1px solid #333333;
     outline: none;
     font-size: 1rem;
     background-color: rgba(0,0,0,0);
     color: #333333;
-    border-bottom: 1px solid #333333;
     margin: 0;
     padding: 0.25rem 0;
     width: 12rem;
@@ -72,10 +68,10 @@ a {
 .header_middle form button {
     border: none;
     cursor: pointer;
-    font-size: 1.25rem;
+    font-size: 1rem;
     background-color: rgba(0,0,0,0);
     margin: 0;
-    padding: 0;
+    padding: 0.25rem 0;
 }
 
 .header_logo {
@@ -90,21 +86,22 @@ a {
     list-style: none;
 
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
+    gap: 1rem 4rem;
 
-    padding: 1rem;
-    margin: 0;
+    padding: 0;
+    margin: 1rem;
 
     color: #333333;
     font-size: 1.125rem;
 }
-
+/* 
 .header_bottom > li:not(:last-child)::after {
     content: '';
     display: inline-block;
     width: 2rem;
-}
+} */
 
 /* header : end */
 
@@ -122,7 +119,7 @@ a {
     display: flex;
     flex-wrap: wrap;
 
-    padding: 0;
+    padding: 0 0.5rem;
     margin: 0;
 }
 
@@ -137,7 +134,7 @@ a {
     content: '';
 
     width: 100%;
-    padding-top: 150%;
+    padding-top: 133.33%;
     display: block;
 
     background-color: #29C1BC;
@@ -145,18 +142,71 @@ a {
 
 .img_wrapper {
     position: relative;
-    overflow: hidden;
 }
 
 .product_list img {
     position: absolute;
-    top: 0;
-    left: 50%;
-    bottom: 0;
-    right: 0;
-    transform: translateX(-50%);
 
+    top: 0;
     height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.product_long_list {
+    list-style: none;
+
+    padding: 0 1rem;
+    margin: 0;
+}
+
+.product_long_list > li:nth-child(n):not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.product_long_list > li {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.long_img_wrapper::before {
+    content: '';
+
+    width: 100%;
+    padding-top: 30%;
+    display: block;
+
+    background-color: #29C1BC;
+}
+
+.long_img_wrapper {
+    position: relative;
+    overflow: hidden;
+
+    flex: 3;
+}
+
+.long_info {
+    margin-left: 2rem;
+    flex: 1;
+}
+
+.product_long_list img {
+    position: absolute;
+
+    top: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+section h1 {
+    margin: 1rem;
+    padding: 0;
 }
 
 /* footer : start */
